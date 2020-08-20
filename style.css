@@ -1,0 +1,73 @@
+* {
+    font-family: 'Poppins',
+    sans-serif;
+}
+.positions, .features, .about-us, footer {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+
+.hero {
+    text-align: center;
+    margin: auto;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(99, 96, 171, 1) 100%);
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+h1, .hero2-heading {
+    color: white
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-us {
+    width: 60%;
+}
+
+h3, h4 {
+    padding-top: 2rem;
+}
+
+img {
+    border-radius: 5px;
+    width: 280px;
+    height: 400px;
+}
+
+
+img {
+    border-radius: 5px;
+    width: 260px;
+    height: 370px;
+}
+
+.feat {
+    border-radius: 5px;
+    width: 230px;
+    height: 160px;
+}
+
+.fab {
+    color: #777777;
+}
+
+a {
+    color: #777777;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}

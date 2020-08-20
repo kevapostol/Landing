@@ -10,6 +10,9 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/210cdb4421.js" crossorigin="anonymous"></script>
+
         <!-- Bootstrap Material Design CDN -->
         <link
             rel="stylesheet"
@@ -17,31 +20,40 @@
             integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="./style/index.scss" />
+        <link rel="stylesheet" href="./style.css" />
         <title>Kanvas</title>
     </head>
     <body>
-        <section id="landing-content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#landing-content">Home</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#landing-content">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about-us">About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#features">Features</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#feat">Features</a>
                     </li>
                 </ul>
-            </nav>
-            <h1>Kanvas</h1>
-            <h1>Picture your career as a painting, not a ladder</h1>
-            <button>
-                <a href="https://www.kanvasdevs.com/">Discover More</a>
-            </button>
+            </div>
+        </nav>
+
+        <section id="landing-content">
+            <div class="hero">
+                <h1>Kanvas</h1>
+                <h2 class="hero2-heading">Picture your career as a painting, not a ladder</h2>
+                <button class="btn btn-light btn-lg">
+                    <a href="https://www.kanvasdevs.com/">Discover More</a>
+                </button>
+            </div>
         </section>
-        <section id="about-us">
+        <div class="about-us justify" id="about">
             <h2>About Us</h2>
             <p>
                 Kanvas is a professional networking site for both Software
@@ -56,46 +68,68 @@
                 synonymous to the increment movements you make to create a
                 masterpiece.
             </p>
-        </section>
-        <section id="positions">
+        </div>
+        <div class="positions container">
             <h2>The Team</h2>
-            <h3>Kevin Apostol</h3>
-            <p>Fullstack Engineer</p>
-            <a href="https://github.com/kevapostol">GitHub</a>
-            <a href="https://www.linkedin.com/in/kevapostol/">LinkedIn</a>
-            <a href="https://twitter.com/apostolkev">Twitter</a>
-            <h3>Ariana Bibiano</h3>
-            <p>UI/UX and Frontend Developer</p>
-            <a href="https://github.com/ariana124">GitHub</a>
-            <a href="https://www.linkedin.com/in/ariana-bibiano/">LinkedIn</a>
-            <a href="https://twitter.com/arianabnb">Twitter</a>
-            <h3>Erika Caoili</h3>
-            <p>Project Manager and DevOps</p>
-            <a href="https://github.com/ecaoili24">GitHub</a>
-            <a href="https://www.linkedin.com/in/erika-c-11a81368/">LinkedIn</a>
-            <a href="https://twitter.com/CaoiliErika">Twitter</a>
-        </section>
-        <section id="features">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="./pictures/Kevin.png" alt="Kevin">
+                    <h3>Kevin Apostol</h3>
+                    <p>Fullstack Engineer</p>
+                    <a href="https://github.com/kevapostol"><i class="fab fa-github-square fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/kevapostol/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://twitter.com/apostolkev"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+                <div class="col-sm">
+                    <img src="./pictures/Ariana.png" alt="Ariana">
+                    <h3>Ariana Bibiano</h3>
+                    <p>UI/UX and Frontend Developer</p>
+                    <a href="https://github.com/ariana124"><i class="fab fa-github-square fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/ariana-bibiano/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://twitter.com/arianabnb"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+                <div class="col-sm">
+                    <img src="./pictures/Erika.png" alt="Erika">
+                    <h3>Erika Caoili</h3>
+                    <p>Project Manager and DevOps</p>
+                    <a href="https://github.com/ecaoili24"><i class="fab fa-github-square fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/erika-c-11a81368/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://twitter.com/CaoiliErika"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="features container" id="feat">
             <h2>Features</h2>
-            <h4>Professional Networking</h4>
-            <p>
-                Create a profile to display skills and share posts with the
-                community. Network to build applications.
-            </p>
-            <h4>Job Search</h4>
-            <p>
-                While expanding your professional network, why not find your
-                dream job all in one place.
-            </p>
-            <h4>Fast Load Times</h4>
-            <p>
-                Kanvas' user interface is built with React to prioritize optimal
-                performance and fast load times.
-            </p>
-        </section>
+            <div class="row">
+                <div class="col-sm">
+                    <img class="feat" src="./pictures/feat1.png" alt="Feature 1">
+                    <h4>Professional Networking</h4>
+                    <p>
+                        Create a profile to display skills and share posts with the
+                        community. Network to build applications.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="feat" src="./pictures/feat2.png" alt="Feature 2">
+                    <h4>Job Search</h4>
+                    <p>
+                        While expanding your professional network, why not find your
+                        dream job all in one place.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="feat" src="./pictures/feat3.png" alt="Feature 3">
+                    <h4>Fast Load Times</h4>
+                    <p>
+                        Kanvas' user interface is built with React to prioritize optimal
+                        performance and fast load times.
+                    </p>
+                </div>
+            </div>
+        </div>
         <footer>
             <p>© 2020 by Kanvas Devs</p>
-            <a href="https://github.com/ariana124/kanvas">Link to Repo</a>
+            <a href="https://github.com/ariana124/kanvas"><i class="fab fa-github-alt fa-4x"></i></a>
         </footer>
     </body>
 </html>
